@@ -1,6 +1,6 @@
 from pyspark.sql import SparkSession
 # датафреймы products и categories имеют связь многие ко многим, так как у продукта есть 
-# много категорий, а у категории есть много продуктов. Следовательно, необходима 
+# много категорий, а у категории есть много продуктов. Следовательно, необходим 
 # промежуточный датафрейм product_categories, который связвает продукты и категории.
 
 def get_product_categories(products_dataframe, categories_dataframe, products_categories_dataframe):
